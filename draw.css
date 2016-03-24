@@ -1,0 +1,63 @@
+div {
+border-radius: 3%;
+border: 1px, solid, black;
+}
+#main {
+height: 700px;
+width: 642px;
+background-color: black;
+padding: 2px;
+}
+.up {
+height: 54px;
+}
+#paint {
+width: 530px;
+background-color: #6B8E23;
+margin: 2px 2px 2px 5px;
+border-radius: 30px 30px 0px 0px;
+}
+#logo {
+float:right;
+margin: 1px 20px 0 5px;
+border-radius: 7%;
+box-shadow: 1px 1px 1px 1px #abc inset, 1px 1px 1px 1px #eee;
+}
+#field {
+height: 640px;
+width: 640px;
+background-color: white;
+border-radius: 20px 20px 20px 20px;
+}
+.color {
+height: 30px;
+width: 30px;
+background-color: white;
+border-radius: 4%;
+position: relative;
+left:15px;
+top: 12px;
+border: 2px;
+border-style: inset; 
+border-color: black #9BA781 #9BA781 black;
+}
+.color:hover{
+border: 3px;
+border-style: inset; 
+border-color: black;
+}
+.square {
+height: 40px;
+width: 40px;
+background-color: white;
+border-radius: 0%;
+}
+.square:hover{
+background-color: #D0F0C0;
+}
+.square:enter{
+background-color: black;
+}
+.square:active{
+background-color: black;
+}
