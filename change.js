@@ -23,34 +23,37 @@ if(window.addEventListener) {
             alert('Ошибка: getContext! не существует');
             return;
         }
-        var previousColorElement;
+		
 
-function changeColor(color, div.colorElement)
-{
-    // 	Меняем текущий цвет рисования
-	context.strokeStyle = color;
-	
-	// Меняем стиль элемента <img>, по которому щелкнули
-	div.colorElement.className = "Selected";
-	
-	// Возвращаем ранее выбранный элемент <img> в нормальное состояние
-	if (previousColorElement != null)
-	   previousColorElement.className = "";
-	   
-	previousColorElement = div.colorElement;
-}
         tool = new tool_pencil();
         canvas.addEventListener('mousedown', ev_canvas, false);
         canvas.addEventListener('mousemove', ev_canvas, false);
         canvas.addEventListener('mouseup',   ev_canvas, false);
     }
 
-    // Здесь мы будем ловить движения мыши
+
+
     function tool_pencil () {
         var tool = this;
         this.started = false;
-
-    
+		
+		
+		var color
+		
+	changeColor = function(color){
+		context.strokeStyle = color;	
+	};
+		
+    /*grd.addColorStop(0.217, 'rgba(255, 0, 0, 0.000)');
+      grd.addColorStop(0.225, 'rgba(255, 0, 0, 1.000)');
+      grd.addColorStop(0.320, 'rgba(255, 252, 0, 1.000)');
+      grd.addColorStop(0.440, 'rgba(1, 180, 57, 1.000)');
+      grd.addColorStop(0.560, 'rgba(0, 234, 255, 1.000)');
+      grd.addColorStop(0.680, 'rgba(0, 3, 144, 1.000)');
+      grd.addColorStop(0.800, 'rgba(255, 0, 198, 1.000)');
+      grd.addColorStop(0.850, 'rgba(255, 0, 198, 0.000)');
+	  */
+		
         this.mousedown = function (ev) {
             context.beginPath();
             context.moveTo(ev._x, ev._y);
