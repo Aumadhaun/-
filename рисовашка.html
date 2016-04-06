@@ -21,26 +21,25 @@
 			<div class="color" style='background-color:yellow' onclick="changeColor('yellow')"> </div>
 			<div class="color" style='background-color:orange' onclick="changeColor('orange')"> </div>
 			<div class="color" style='background-color:red' onclick="changeColor('red')"> </div>
-			<div class="color" style='background-color:white' onclick="alert('А оно тебе надо, белым по белому?')"> </div>
+			<div class="color" style='background-color:white' onclick="changeColor('white')"> </div>
 	
 		</div>
 		<div id="menu" class="up">
+			<div class="button" onclick="changeThickness(1)"> <div id="thin"> </div> </div>
+			<div class="button" onclick="changeThickness(4)"> <div id="thick"> </div></div>
 			<div class="button" onclick="clearCanvas()"> Сброс </div>
-			<div class="button"> Задать параметры поля </div>
+			<!-- <div class="button"> Задать параметры поля </div> -->
 		</menu>	
 		</div>
 		<div id="field">
 				<canvas id="tablet" height="638px" width="638px" style="border:1px solid #9BA781; "> </canvas>
-			<!-- <div id="color">
-  <div></div> -->
 </div>
 		</div>
 	</div>
 </body>
 </html>
 
-<!-- В. Можно ли «перезагрузить» холст?
-
+<!-- 
 О. Да. Установка ширины или высоты для элемента <canvas> сотрет его содержимое и сбросит все свойства контекста рисования в значения по умолчанию. Вам даже не нужно менять ширину, вы можете просто установить ее в текущее значение, например, так:
 
 var b_canvas = document.getElementById("b");

@@ -43,10 +43,14 @@ if(window.addEventListener) {
 	changeColor = function(color){
 		context.strokeStyle = color;	
 	};
+	changeThickness = function(thickness) {
+		context.lineWidth = thickness;
+	};
 	
 	clearCanvas = function() {
 	context.clearRect(0, 0, canvas.width, canvas.height);
 	}
+	
 		
     /*grd.addColorStop(0.217, 'rgba(255, 0, 0, 0.000)');
       grd.addColorStop(0.225, 'rgba(255, 0, 0, 1.000)');
