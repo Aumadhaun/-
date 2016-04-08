@@ -6,7 +6,6 @@
 <title> Рисовашка </title>
  <link type="text/css" rel="stylesheet" href="draw.css"/>
  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
- <script src="field.js"> </script>
  <script src="change.js"> </script>
 </header>
 <body>
@@ -21,8 +20,7 @@
 			<div class="color" style='background-color:yellow' onclick="changeColor('yellow')"> </div>
 			<div class="color" style='background-color:orange' onclick="changeColor('orange')"> </div>
 			<div class="color" style='background-color:red' onclick="changeColor('red')"> </div>
-			<div class="color" style='background-color:white' onclick="changeColor('white')"> </div>
-	
+			<div class="color" style='background-img:colors.jpeg' onclick="setInterval('rgb()',1000)"> </div>
 		</div>
 		<div id="menu" class="up">
 			<div class="button" onclick="changeThickness(1)"> <div id="thin"> </div> </div>

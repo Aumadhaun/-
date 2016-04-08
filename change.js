@@ -47,20 +47,32 @@ if(window.addEventListener) {
 		context.lineWidth = thickness;
 	};
 	
+	rgb = function() {
+var r = Math.floor(Math.random()*256);
+var g = Math.floor(Math.random()*256);
+var b = Math.floor(Math.random()*256);
+var rgb = 'rgb(' + r + ',' + g + ',' + b + ')';
+context.strokeStyle = rgb;
+} ;
+
+	
+	/*gradientColor = function(color){
+		context.strokeStyle = ('rgba(255, 0, 0, 0.000)');
+      context.strokeStyle =('rgba(255, 0, 0, 1.000)');
+      context.strokeStyle =('rgba(255, 252, 0, 1.000)');
+      context.strokeStyle =('rgba(1, 180, 57, 1.000)');
+      context.strokeStyle =('rgba(0, 234, 255, 1.000)');
+      context.strokeStyle =('rgba(0, 3, 144, 1.000)');
+      context.strokeStyle =('rgba(255, 0, 198, 1.000)');
+      context.strokeStyle =('rgba(255, 0, 198, 0.000)');
+	};*/
+	
 	clearCanvas = function() {
 	context.clearRect(0, 0, canvas.width, canvas.height);
 	}
 	
 		
-    /*grd.addColorStop(0.217, 'rgba(255, 0, 0, 0.000)');
-      grd.addColorStop(0.225, 'rgba(255, 0, 0, 1.000)');
-      grd.addColorStop(0.320, 'rgba(255, 252, 0, 1.000)');
-      grd.addColorStop(0.440, 'rgba(1, 180, 57, 1.000)');
-      grd.addColorStop(0.560, 'rgba(0, 234, 255, 1.000)');
-      grd.addColorStop(0.680, 'rgba(0, 3, 144, 1.000)');
-      grd.addColorStop(0.800, 'rgba(255, 0, 198, 1.000)');
-      grd.addColorStop(0.850, 'rgba(255, 0, 198, 0.000)');
-	  */
+    
 		
         this.mousedown = function (ev) {
             context.beginPath();
