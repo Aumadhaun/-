@@ -53,8 +53,7 @@ var g = Math.floor(Math.random()*256);
 var b = Math.floor(Math.random()*256);
 var rgb = 'rgb(' + r + ',' + g + ',' + b + ')';
 context.strokeStyle = rgb;
-} ;
-
+};
 	
 	/*gradientColor = function(color){
 		context.strokeStyle = ('rgba(255, 0, 0, 0.000)');
